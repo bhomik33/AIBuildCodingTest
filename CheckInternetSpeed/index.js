@@ -5,9 +5,9 @@ import {performance} from 'perf_hooks';
 async function checkInternetSpeed(URI) {
     // controller is used to abort a fetch request
     const controller = new AbortController();
-
+    const timeout = 5000;
     // abort function runs after 5 secs
-    setTimeout(() => controller.abort(), 5000);
+    setTimeout(() => controller.abort(), timeout);
     const startTime = performance.now();
     try {
         // making a fetch request to the URI
@@ -35,5 +35,4 @@ async function checkInternetSpeed(URI) {
         return 'terrible';
     }
 }
-
 console.log(await checkInternetSpeed('https://deelay.me/5000/https://picsum.photos/200/300'));
