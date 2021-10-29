@@ -25,7 +25,7 @@ async function checkInternetSpeed(URI) {
             return 'good';
         }
 
-        // the else block would run if the response time is more thant half second but less than 5 seconds
+        // the else block would run if the response time is more than half second but less than 5 seconds
         else {
             return 'fine';
         }
