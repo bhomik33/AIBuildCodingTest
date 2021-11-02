@@ -31,6 +31,5 @@ function arrayToTree(arr, root) {
 
 
 const categoriesTree = arrayToTree(categoriesArray, root);
-
-
-module.exports = categoriesTree;
+const categoriesTreeArray = [categoriesTree];
+module.exports = categoriesTreeArray;
